@@ -1,4 +1,6 @@
 import React from "react";
+import Detail from "./Detail";
+
 function Card(props){
     return(
         <div className="card">
@@ -7,8 +9,7 @@ function Card(props){
                 <img src={props.img} className="circle-img" />
             </div>
             <div className="bottom">
-                <p>{props.num}</p>
-                <p>{props.email}</p>
+                <Detail num={props.num} email={props.email} />
             </div>
       </div>
     );
